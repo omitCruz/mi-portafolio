@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio GitHub API</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; text-align: center; }
+        img { border-radius: 50%; }
+        
+        #profile img { width: 150px; }
+        
+        #projects-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; text-align: left; }
+        .project-card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; }
+
+        #followers-container { display: flex; justify-content: center; gap: 10px; margin-top: 20px; }
+        #followers-container img { width: 50px; height: 50px; }
+    </style>
+</head>
+<body>
+
+    <header id="profile">
+        </header>
+
+    <hr>
+
+    <section>
+        <h2>Mis Proyectos Recientes</h2>
+        <div id="projects-container">
+            </div>
+    </section>
+
+    <hr>
+
+    <footer>
+        <h3>MIS PROYECTOS</h3>
+        <div id="followers-container">
+            </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
