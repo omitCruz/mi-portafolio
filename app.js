@@ -1,7 +1,7 @@
 const username = 'omitCruz';
 
 const urlProfile = `https://api.github.com/users/${username}`;
-const urlRepos = `https://api.github.com/users/${username}/repos?sort=updated&per_page=6&type=owner&direction=desc`;
+const urlRepos = `https://api.github.com/users/${username}/repos?sort=updated&per_page=8&type=owner&direction=desc`;
 const urlFollowers = `https://api.github.com/users/${username}/followers`;
 
 const profileContainer = document.getElementById('profile');
@@ -65,4 +65,5 @@ async function getFollowers() {
 
 getProfile();
 getProjects();
+
 getFollowers();
